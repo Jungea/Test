@@ -1,0 +1,68 @@
+git add 문서명.확장자명
+(git add *  --전체/ git add .  --특정 확장자)
+git commit -m "내용"
+git remote add origin 주소
+git push
+
+<수정 시-해당 저장소의 모든 수정된 것 업로드?>
+(git commit -am " 수정 내용 " 
+git push)
+
+<폴더 지정>
+git init
+git add 이름
+git commit -m " "
+git remote add origin 주소
+git push
+따라쓰기
+로그인(완전처음만)
+
+
+====================================================
+<이클립스 내용 추가>
+window - show view - other: git - git staging  ///or/// 프로젝트 - team - commit : ///or/// git staging 창 드래그 & 드롭(unstaged->staged) + commit and push
+
+<이클립스 깃 연동>
+프로젝트 생성 - team - share project :(체크 user or create respository in parent folder of project) - 하나 클릭 - create repository - finish
+
+물음표: 프로젝트 - team - add to index
+
+프로젝트 - team - commit : 설명 + commit
+
+프로젝트 - team - push branch 'master' : 깃 주소 + next + next + push
+
+
+
+===================================================
+$ git config --global user.name "Jungea"
+$ git config --global user.email jungea2241@gmail.com
+
+cd 폴더이름 --이동
+
+vim 문서명.확장자  --만들기
+
+  -> i --삽입(수정)
+
+  -> ESC
+
+  -> Shift+;
+
+  -> w+q+enter 
+
+shift+insert  --복사
+vim README.md  --설명파일(html써서 꾸미기 가능)
+ 
+git init
+git add 문서명.확장자명
+(git add *  --전체/ git add .  --특정 확장자)
+git commit -m "내용"
+(git commit -am " "  --수정한 파일)
+git remote add origin https://github.com/Jungea/Test.git
+git push  (오류뜨면 여기부터)
+따라쓰기
+로그인
+ 
+
+**오류(확정했던 폴더가 바뀌었을 때 일어나는 것으로 예상)
+1)git pull origin master  --allow-unrelated-histories
+후 git push 부터 다시
